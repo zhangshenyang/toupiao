@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <script src="script/fontsizeset.js"></script>
+    <style>
+        html{
+            font-size: 44.444px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            background: url("images/toupiao.jpg") no-repeat;
+            background-size:cover;
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+        header{
+            width: 7.2rem;
+            height: 0.96rem;
+            background: darkslateblue;
+        }
+        header a{
+            width: 0.2rem;
+            height: 0.38rem;
+            float: left;
+            font-size: 0;
+            margin: 0.29rem 0 0 0.3rem;
+
+        }
+        header a img{
+            width: 100%;
+            height: 100%;
+        }
+        header h2{
+            font-size: 0.36rem;
+            font-weight: normal;
+            color: #fff;
+            text-align: center;
+            line-height: 0.96rem;
+        }
+
+        .main1{
+            width: 7.2rem;
+        }
+        .main1 h1{
+            width: 4.63rem;
+            height: 0.8rem;
+            margin: 0.49rem auto 0.61rem auto;
+            font-size: 0.5rem;
+            text-align: center;
+            color: wheat;
+            animation:lefteaseinAnimate 3s;
+            -webkit-animation:lefteaseinAnimate 3s;
+        }
+
+        .main2{
+            width: 7.2rem;
+            margin-top: 1rem;
+        }
+        .main2 h1{
+            width: 4.63rem;
+            height: 0.4rem;
+            font-size: 0.3rem;
+            color: #ffffff;
+            margin: 0.2rem;
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 3s;
+        }
+        .main2 p{
+            padding-bottom: 0.1rem;
+            margin-left:0.2rem;
+            font-size: 0.3rem;
+            color: #ffffff;
+
+        }
+        .main2 .guize1{
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 3.5s;
+        }
+        .main2 .guize2{
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 4s;
+        }
+        .main2 .guize3{
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 4.5s;
+        }
+        .main3{
+            width: 7.2rem;
+            margin-top: 0.5rem;
+        }
+        .main3 h1{
+            width: 4.63rem;
+            height: 0.4rem;
+            font-size: 0.3rem;
+            color: #ffffff;
+            margin: 0.2rem;
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 5s;
+        }
+        .main3 p{
+            padding-bottom: 0.1rem;
+            margin-left:0.2rem;
+            font-size: 0.3rem;
+            color: #ffffff;
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 5.5s;
+        }
+
+        .main4{
+            width: 7.2rem;
+           margin-top: 0.5rem;
+        }
+        .main4 h1{
+            width: 4.63rem;
+            height: 0.2rem;
+            font-size: 0.28rem;
+            color: #ffffff;
+            margin: 0.2rem 0 0 0.3rem;
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 7s;
+        }
+        .main4 p{
+            padding-bottom: 0.1rem;
+            margin-left:0.3rem;
+            font-size: 0.3rem;
+            color: #ffffff;
+        }
+
+        .main4 .guize1{
+            padding-bottom: 0.2rem;
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 6s;
+        }
+        .main4 .guize2{
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 6.5s;
+        }
+
+        .main5{
+            width: 7.2rem;
+        }
+        .main5 h1{
+            width: 7.2rem;
+            height: 1.1rem;
+            font-size: 0.28rem;
+            color: #ffffff;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 0.7rem;
+            animation:lefteaseinAnimates 3s;
+            -webkit-animation:lefteaseinAnimates 7.5s;
+        }
+
+        /*定义一个名字为lefteaseinAnimate动画，实现从页面的左边淡入页面效果*/
+
+
+        @keyframes lefteaseinAnimate{
+            0%{ transform: translateY(-3rem); opacity: 0;}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+            100%{ transform: translateY(0rem); opacity: 1;}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+        }
+
+        @keyframes lefteaseinAnimates{
+            0%{ transform: translateY(20rem); opacity: 0;}
+            100%{ transform: translateY(0rem); opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--<a href=""><img src="images/jiantou_03.png" alt=""/></a>-->
+        <h2>2018年全国围棋精英赛</h2>
+    </header>
+    <section class="main1">
+        <h1>投票规则</h1>
+    </section>
+
+<section class="main2">
+    <h1>投票时间:</h1>
+    <p class="guize1">(1)2018/12/20—2018/12/31截止。</p>
+    <p class="guize2">(2)请在投票的有效时间内投票，否则将被视为无效</p>
+    <p class="guize3">(3)本次活动参与群体不受任何限制，可通过点击“浏阳市‘2018全国新闻媒体围棋精英赛’"进入投票页面，欢迎您参与给候选者投票。</p>
+</section>
+
+<section class="main3">
+    <h1>总决赛最终奖励政策：</h1>
+    <p class="guize1">票数最高者给予：“最佳人气王”证书</p>
+
+</section>
+
+    <section class="main4">
+        <p class="guize1">举办地点：浏阳市银天大酒店</p>
+        <p class="guize2">举办时间：2018年12月30日至2019年1月2日</p>
+        <h1>注：此活动最终解释权归组委会所有</h1>
+    </section>
+
+    <section class="main5">
+        <h1>活力浏阳 全国新闻媒体围棋精英赛</h1>
+    </section>
+
+
+
+</body>
+</html>
